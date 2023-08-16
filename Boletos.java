@@ -1,3 +1,4 @@
+package Boletos;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -21,11 +22,11 @@ class Comprador {
     }
 }
 
-public class SistemaBoletos {
+public class Boletos {
     ArrayList<Localidad> localidades;
     Comprador comprador_actual;
 
-    public SistemaBoletos() {
+    public Boletos() {
         localidades = new ArrayList<>();
         localidades.add(new Localidad("A", 100, 0));
         localidades.add(new Localidad("B", 200, 0));
@@ -164,7 +165,7 @@ public class SistemaBoletos {
     }
 
     public static void main(String[] args) {
-        SistemaBoletos sistema = new SistemaBoletos();
+        Boletos sistema = new Boletos();
         sistema.ejecutar();
     }
 }
